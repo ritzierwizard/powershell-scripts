@@ -11,7 +11,7 @@ function Add-CppProject {
         }
         $newFolder = $Path + $Name
         if (!(Test-Path $newFolder -PathType Container)) {
-            Copy-Item -Recurse "$env:userprofile\OneDrive\Documents\Sublime Templates\sublime_c++" $Name 
+            Copy-Item -Recurse "$env:DOCUMENTS\Sublime Templates\sublime_c++" $Name 
             Set-Location $Name
         }
     }
